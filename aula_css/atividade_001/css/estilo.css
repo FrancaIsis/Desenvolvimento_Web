@@ -32,35 +32,88 @@ body {
     font-family: 'Merriweather', serif;
 }
 
-.conteiner {
-    display: flex;       /* flexbox */
-    flex-wrap: wrap;     /* quebra de linha */
+/*.conteiner {
+    display: flex;       
+    flex-wrap: wrap;    
     justify-content: center; 
-    gap: 10px;   
-         
+    gap: 10px;            
 }
 
 .conteiner1{
-    background-color: rgb(126, 134, 126);
+    background-color: rgb(205, 207, 205);
     color: white;
-    border: 2px solid black;
+    border: 2px solid rgb(243, 240, 240);
     margin: 20px;
     padding: 20px;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 280px;
     border-radius: 5px;  
     }
 
 .conteiner2{
-    background-color: rgb(56, 139, 56);
+    background-color: rgb(205, 207, 205);
     color: white;
-    border: 2px solid black;
+    border: 2px solid rgb(243, 240, 240);
     margin: 20px;
     padding: 20px;
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 280px;
     border-radius: 5px;  
-    }
+    }*/
+
+.titulo{
+    position: relative;
+    width: 800px; 
+    height: 50px; 
+    background-color: rgb(168, 89, 192); 
+    border-radius: 20px; 
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 50px auto;
+    color: white;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+    
+.titulo h1{
+    font-family: 'Merriweather', serif;
+       
+    font-size: 2.5rem;
+}
+
+figure {
+  margin: -10px 0 0 0;
+  padding: 0;
+  display: flex;
+  width: 250px;
+  height: 250px;
+  display: flex;       /* flexbox */
+  flex-direction: column; 
+  
+}
+
+.conteiner-figures {
+    display: flex;       /* Ativa flexbox */
+    flex-wrap: wrap;     /* Permite quebra de linha */
+    justify-content: center; /* Centraliza os itens */
+    gap: 10px;           /* Espaço entre as figuras */
+    margin: 20px;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+figcaption {
+  font-style: italic;
+  margin-top: 10px;
+  display: block; /* pro texto ficar embaixo da figura*/
+}
 
 nav{
     background-color: #333;
@@ -128,25 +181,7 @@ h2{
     font-size: 2.5rem;
 }*/
 
-.titulo{
-    width: 800px; 
-    height: 50px; 
-    background-color: rgb(168, 89, 192); 
-    border-radius: 20px; 
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    margin: 10px auto;
-    color: white;
-    gap: 10px;
-    flex-wrap: wrap;
-}
 
-.titulo h1{
-    font-family: 'Merriweather', serif;
-   
-    font-size: 2.5rem;
-}
 
 .circulo {
     
