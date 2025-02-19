@@ -14,106 +14,18 @@ header{
 }
 
 header h1{
-    font-family: 'Merriweather', serif;
-   
+    font-family: 'Merriweather', serif;   
     font-size: 2.5rem;
-}
-
-
-footer{
-    background-color: #222;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
-    text-align: center;
 }
 
 body {
+    background-color: #f4f1ea; /* Cor suave de fundo */
+    color: #333; /* Cor do texto para boa legibilidade */
     font-family: 'Merriweather', serif;
-}
-
-/*.conteiner {
-    display: flex;       
-    flex-wrap: wrap;    
-    justify-content: center; 
-    gap: 10px;            
-}
-
-.conteiner1{
-    background-color: rgb(205, 207, 205);
-    color: white;
-    border: 2px solid rgb(243, 240, 240);
-    margin: 20px;
-    padding: 20px;
-    width: 250px;
-    height: 280px;
-    border-radius: 5px;  
-    }
-
-.conteiner2{
-    background-color: rgb(205, 207, 205);
-    color: white;
-    border: 2px solid rgb(243, 240, 240);
-    margin: 20px;
-    padding: 20px;
-    width: 220px;
-    height: 280px;
-    border-radius: 5px;  
-    }*/
-
-.titulo{
-    position: relative;
-    width: 800px; 
-    height: 50px; 
-    background-color: rgb(168, 89, 192); 
-    border-radius: 20px; 
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    margin: 50px auto;
-    color: white;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-    
-.titulo h1{
-    font-family: 'Merriweather', serif;
-       
-    font-size: 2.5rem;
-}
-
-figure {
-  margin: -10px 0 0 0;
-  padding: 0;
-  display: flex;
-  width: 250px;
-  height: 250px;
-  display: flex;       /* flexbox */
-  flex-direction: column; 
-  
-}
-
-.conteiner-figures {
-    display: flex;       /* Ativa flexbox */
-    flex-wrap: wrap;     /* Permite quebra de linha */
-    justify-content: center; /* Centraliza os itens */
-    gap: 10px;           /* Espaço entre as figuras */
-    margin: 20px;
-    padding: 20px;
-    margin-bottom: 50px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Melhor espaçamento entre linhas */
   }
-
-img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-figcaption {
-  font-style: italic;
-  margin-top: 10px;
-  display: block; /* pro texto ficar embaixo da figura*/
-}
 
 nav{
     background-color: #333;
@@ -149,58 +61,94 @@ h2{
     max-width: 1500px; 
     margin: 20px auto; 
     padding: 20px; 
-    background-color: #f9f9f9; 
-   
+    background-color: #69b4a483;    
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
 }
 
-/*.oferta{
-    background-color: #353a35;
-    color: white;
-    text-align: center;
+.titulo{
+    position: relative;
+    /*width: 800px; */
+    height: 100px; 
+    background-color: rgb(168, 89, 192); 
+    border-radius: 5px; 
+    display: flex;
+    justify-content: center;
     padding: 20px;
+    margin: 50px auto;
+    color: white;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+    
+.titulo h1{
+    font-family: 'Merriweather', serif;       
+    font-size: 2.5rem;
 }
 
-.oferta h1{
-    font-family: 'Merriweather', serif;
-   
-    font-size: 2.5rem;
-}*/
-
-/*.categoria{
-    background-color: #1380c0;
-    color: white;
-    text-align: center;
-    padding: 20px;
+figure {
+  margin: -10px 0 0 0;
+  padding: 0;
+  display: flex;
+  width: 250px;
+  height: 250px;
+  display: flex;       /* flexbox */
+  flex-direction: column; 
+  
 }
 
-.categoria h1{
-    font-family: 'Merriweather', serif;
-   
-    font-size: 2.5rem;
-}*/
+.conteiner-figures {
+    display: flex;       /* Ativa flexbox */
+    flex-wrap: wrap;     /* Permite quebra de linha */
+    justify-content: center; /* Centraliza os itens */
+    gap: 10px;           /* Espaço entre as figuras */
+    margin: 20px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
 
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
+figcaption {
+  font-style: italic;
+  margin-top: 10px;
+  display: block; /* pro texto ficar embaixo da figura*/
+}
 
-.circulo {
-    
-    
+.circulo {       
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center; 
-   
+    justify-content: center;    
 }
 
 .circulo1{
     width: 150px; 
     height: 150px; 
-    background-color: rgb(201, 201, 224); 
+    background-color: white; 
     align-items: center;
-    color: white; 
+    color: black; 
     font-size: 11px;
     margin: 20px;
     padding: 20px;
     border-radius: 50%; 
 }
+.menu-voltar{
+    background-color: #39383a;
+    color: rgb(239, 241, 236);
+    text-align: center;
+    padding: 20px;
+}
+
+footer{
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
