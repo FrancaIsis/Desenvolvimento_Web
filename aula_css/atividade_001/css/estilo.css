@@ -11,7 +11,11 @@ header{
     color: white;
     text-align: center;
     padding: 20px;
-}
+    background-size: contain;
+    /*background-image: url("img/livro_cavalo_alado.jpg");*/
+    background-repeat: no-repeat;
+    height: 900px;
+    }
 
 header h1{
     font-family: 'Merriweather', serif;   
