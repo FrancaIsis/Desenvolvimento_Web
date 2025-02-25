@@ -173,6 +173,7 @@ figcaption {
     color: rgb(239, 241, 236);
     text-align: center;
     padding: 20px;
+    clear: none;
 }
 .contato{
     font-size: 18px; 
@@ -191,7 +192,12 @@ figcaption {
 
 
 .float-left_1{
-    width: 30px;
+    float: left;
+    width: 50%;
+}
+.float-right_1{
+    float: right;
+    width: 50%;
 }
 
 footer{
