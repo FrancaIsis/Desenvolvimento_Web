@@ -58,6 +58,32 @@ nav a{
     margin: 0 10px;
     border-radius: 5px;
 }
+/*menu com hover*/
+.menu-hover ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #8e44ad;
+}
+
+.menu-hover li{
+    margin-right: 20px;
+}
+
+.menu-hover a{
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    display: block;
+}
+
+.menu-hover a:hover{
+    background-color: #69b4a483;
+    transition: 0.3s;
+}
+
 
 h2{
     display: flex;
