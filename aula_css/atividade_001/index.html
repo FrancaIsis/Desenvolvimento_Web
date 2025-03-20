@@ -31,6 +31,7 @@
       <a href="#categorias">Categorias</a>
       <a href="#ofertas">Ofertas</a>
       <a href="#contato">Contato</a>
+      <a href="#cadastro">Cadastro </a>
     </nav>
 
     <main>
@@ -170,7 +171,44 @@
         <h1 class="titulo">Autores</h1>
       </section>
 
-      <section class="circulo">
+      <section class="testimonials">
+        <article class="testimonial">
+          <figure class="circulo1">
+            <img src="img/nicodemus.jpg" alt="autores" class="circulo1-img"/>
+            <figcaption>Augustus Nicodemus</figcaption>
+          </figure>
+          <blockquote>
+            "Escrevo como se fosse para salvar a vida de alguém. Provavelmente a minha própria."
+          </blockquote>
+          <p class="autor">— Augustus Nicodemus</p>
+        </article>
+
+        <article class="testimonial">
+          <figure class="circulo1">
+            <img src="img/clarisse.jpg" alt="autores" class="circulo1-img"/>
+            <figcaption>Clarisse Lispector</figcaption>
+          </figure>
+          <blockquote>
+            "Escrevo como se fosse para salvar a vida de alguém. Provavelmente a minha própria."
+          </blockquote>
+          <p class="autor">— Clarice Lispector</p>
+        </article>  
+
+        <article class="testimonial">
+          <figure class="circulo1">
+            <img src="img/lewis.jpg" alt="autores" class="circulo1-img"/>
+            <figcaption>C.S. Lewis</figcaption>
+          </figure>
+          <blockquote>
+            "Quando se trata de conhecer a Deus, toda a iniciativa depende dEle. Se Ele não se quiser revelar, nada do que façamos nos permitirá encontrá-lo."
+          </blockquote>
+          <p class="autor">— C. S. Lewis</p>
+        </article>  
+      </section>
+
+      
+
+      <!-- <section class="circulo">
         <article>
           <figure class="circulo1">
             <img src="img\nicodemus.jpg" alt="autores" />
@@ -212,7 +250,7 @@
             <figcaption>R.R. Tolkien</figcaption>
           </figure>
         </article>
-      </section>
+      </section> -->
 
       <section id="contato">
         <h1 class="titulo">Contatos</h1>
@@ -224,10 +262,11 @@
             Tem alguma dúvida, sugestão ou deseja saber mais sobre nossos livros e
             promoções? Nossa equipe está pronta para te atender! Entre em contato
             pelos nossos canais de atendimento:
+
           </p>
         </article>
       </section>
-      <section class="float-right_1">
+      <section class="float-left_1">
         <article class="contato">
           <p>
             E-mail: contato@livrariaasas.com.br<br />
@@ -235,6 +274,22 @@
             Endereço: Rua dos Livros, 123 - Juiz de Fora, MG
           </p>
         </article>
+      </section>
+      <!-- Formulario de cadastro -->
+      <section class="formulario">
+        <form action="" method="post">
+          <label for="nome">Nome: </label>
+          <input type="text" id="nome" name="nome" required/>
+          <br/>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@dominio.com"/>
+          <br/>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+          <br/>
+          
+          <button type="submit">Enviar</button>
+        </form>
       </section>
       <section>
         <a href="#menu" class="menu-voltar"> Voltar ao Menu</a>
