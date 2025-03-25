@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Define o estilo da tabela */
+table{
+    width: 80%;
+    /* Centraliza a tabela na página */
+    margin: 20px auto;
+    /* Remove o espaço entre as bordas das celulas */
+    border-collapse: collapse;
+    background:white;
+    /* Adiciona sombra a tabela */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+/* Define o estilo das celulas da tabela (tanto cabeçalho quanto corpo) */
+th, td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Define o estilo do cabeçalho da tabela */
+th{
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Aletra a cor de fundo das linhas pares para melhorar a visualização */
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+tr:hover{
+    background-color: #ddd;
+}
