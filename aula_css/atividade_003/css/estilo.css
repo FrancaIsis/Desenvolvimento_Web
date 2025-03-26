@@ -1,0 +1,84 @@
+/* resetando */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.principal{
+    background-image:url("../img/mudança.jpg");
+    /* cobrir todo o container */
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    /* Altura fixa do header */
+    height: 600px;
+    display: flex;
+    /* Alinha o conteudo horizontalmente */
+    justify-content: center;
+    /* Alinha o conteudo horizontalmente */
+    /* align-items: center; */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.principal img{
+    width: 199px;
+    height: 200px;
+    margin: 10px;
+    margin-top: 0;
+    padding: auto;
+    background-position: center;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+      
+}
+.principal h1{
+    text-align: top;
+    font-weight: bold;
+    font-size: 2.8rem;
+    margin-top: 10px;
+    color: rgb(62, 61, 61);
+}
+nav{
+    background-color: rgb(63, 62, 62);    
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+}
+
+nav a{
+    color: rgb(199, 130, 51);
+    text-decoration: solid;
+    margin: 0 30px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* menu com hover */
+.menu-hover ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    /* background-color: #34495e; */
+}
+
+.menu-hover li{
+    margin-right: 20px;
+}
+
+.menu-hover a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+.menu-hover a:hover{
+    background-color: #d38b4c;
+    transition: 0.8s;
+}
