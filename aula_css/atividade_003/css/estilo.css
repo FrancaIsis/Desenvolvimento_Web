@@ -5,6 +5,7 @@
     box-sizing: border-box;
 
 }
+
 .principal{
     background-image:url("../img/mudança.jpg");
     /* cobrir todo o container */
@@ -12,33 +13,34 @@
     width: 100%;
     background-position: center;
     /* Altura fixa do header */
-    height: 600px;
+    height: 700px;
     display: flex;
     /* Alinha o conteudo horizontalmente */
     justify-content: center;
     /* Alinha o conteudo horizontalmente */
     /* align-items: center; */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  
 }
 .principal img{
     width: 199px;
-    height: 200px;
-    margin: 10px;
+    height: 220px;
+    /* margin: 10px; */
     margin-top: 0;
     padding: auto;
     background-position: center;
     object-fit: contain;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
       
 }
-.principal h1{
+/* .principal h1{
     text-align: top;
     font-weight: bold;
     font-size: 2.8rem;
     margin-top: 10px;
     color: rgb(62, 61, 61);
-}
+} */
 nav{
     background-color: rgb(63, 62, 62);    
     padding: 10px;
@@ -82,3 +84,152 @@ nav a{
     background-color: #d38b4c;
     transition: 0.8s;
 }
+/* estilos para a pagina de contatos */
+
+.contatos{
+    background-color: rgb(246, 245, 245);
+    color: rgb(22, 22, 22);
+    height: 100%;
+    }
+.contatos h1{
+    margin: 20px;
+    padding: 10px;
+    color: #6a160a;
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
+    text-align: center;
+    font-size: 28px;
+}
+
+.container-texto{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: whitesmoke; */
+    width: 80%;
+    height: 40%;
+    margin-top: 3%;
+    margin-left: 10%;
+    border-style:groove;
+    /* box-shadow: 2px, 2px, 2px rgb(211, 139, 76); */
+    border-radius: 5px;
+    border-color: #d38b4c;
+    padding: 8px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px; 
+    line-height: 1.5;
+    text-align: left; 
+    align-items: center;
+}
+.container-texto img{
+    width: 2%;
+    height: 2%;
+    padding: 3px;
+}
+
+  
+/* formulario */
+/* estiliza o conteiner do formulario */
+.formulario-container{
+    height: 50%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    /* background: #f6ecea; */
+    padding: 10px;
+    border-radius: 8px;
+    width: 80%;
+    border: 2px solid #d38b4c;
+        
+}
+/* Estiliza os rotulos dos inputs */
+label{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+/* Estiliza os campos de entrada de texto e email */
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+    width: 98%;
+    padding: 1%;
+    margin-top: 2%;
+    border: 0.1px solid #ffe4cc;
+    border-radius: 4px;
+    background-color: #e4e2df;
+}
+
+/* Estliza o botao de envio */
+button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #FA714D;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #6a160a;
+}
+body{
+    position: relative;
+}
+/* sobre nós */
+
+.container-left, .container-right{
+    width: 45%;
+    height: 100%;
+    border-style: groove;
+    border-radius: 5px;
+    border-color: #d38b4c;
+    padding: 8px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px; 
+    line-height: 1.5;
+    text-align: left; 
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    display: inline-block;
+    vertical-align: top;
+    
+    
+}
+.container-left h1{
+    text-align: center;
+    padding: 10px;
+}
+.container-left p{
+    padding: 7px;
+}
+
+.container-sobre {
+    display: flex;
+    justify-content: space-between; /* Distribui os containers com espaçamento */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    flex-wrap: wrap; /* Garante que os elementos se ajustem caso não caibam na tela */
+    width: 90%;
+    margin: 0 auto; /* Centraliza na página */
+}
+.container-right img{
+    width: 100%;
+    height: 50%;    
+    
+}
+/* rodapé */
+footer{
+    background-color:  #3F3E3E;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    /* margin-top: 20px; */
+    text-align: center;
+    clear: both;
+    width: 100%;
+    /* position: absolute; */
+    bottom: 0;
+    }
