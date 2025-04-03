@@ -180,7 +180,7 @@ button:hover {
 
 /* sobre nós */
 
-.container-topo,
+
 .container-base {
   /* width: 45%; */
   /* height: 100%; */
@@ -196,9 +196,33 @@ button:hover {
   margin-top: 3%;
   margin-left: 5%;
   margin-bottom: 3%;
+  margin-right: 5%;
   display: inline-block;
   /* vertical-align: top; */
   min-height: 20%;
+}
+
+.container-topo{
+  /* width: 45%; */
+  width: 42%;
+  border-style: initial;
+  border-radius: 5px;
+  border-color:  #d7cdc4;;
+  padding: 8px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: left;
+  /* margin-top: 3%;
+  margin-left: 5%;
+  margin-bottom: 3%; */
+  display: inline-block;
+  /* vertical-align: top; */
+  min-height: 30%;
+  background-color: #eedfd2;
+  box-shadow: 2px 5px 8px rgba(233, 140, 140, 0.1);
+  margin: 0 auto;
+  gap: 20px;
 }
 
 .container-topo > h1 {
@@ -216,7 +240,7 @@ button:hover {
   justify-content: space-between; /* Distribui os containers com espaçamento */
   align-items: center;
   flex-wrap: wrap; /* Garante que os elementos se ajustem caso não caibam na tela */
-  width: 90%;
+  width: 100%;
   margin: 0 auto; /* Centraliza na página */
 }
 .container-base img {
@@ -226,9 +250,9 @@ button:hover {
 }
 /* Clientes */
 .container-clientes {
-  width: 34%;
+  width: 32%;
   height: 100%;
-  border-style: groove;
+  border-style:initial;
   border-radius: 5px;
   border-color: #252524;
   padding: 8px;
@@ -242,15 +266,15 @@ button:hover {
   display: inline-block;
   /* vertical-align: top; */
   min-height: 40%;
-  color: white;
-  background-color: #3a3939de;
+  color: rgb(33, 33, 33);
+  background-color: #d0cacade;
 }
 .testimonials {
   max-width: 60%;
   /* margin: 0 auto; */
   text-align: center;
   background: #f4f4f4;
-  padding: 20px;
+  padding: 5px;
   border-radius: 10px;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   margin: 20px;
@@ -266,6 +290,8 @@ button:hover {
   justify-content: right;
   box-shadow: 0 4px 8px rgba(247, 148, 148, 0.2);
   margin: 70px;
+  background-color: #f5c092;
+  border-radius: 5px;
 }
 .testimonial p {
   font-weight: bold;
@@ -296,6 +322,7 @@ blockquote {
   display: flex;
   padding: 20px;
   justify-content: center;
+  margin-bottom: 2%;
 }
 
 .caixinhas-portifolio {
@@ -303,6 +330,7 @@ blockquote {
   box-shadow: 2px 5px 8px 8px rgba(233, 140, 140, 0.1);
   text-align: center;
   border-radius: 10px;
+  margin-bottom: 1%;
 }
 
 .caixinhas-portifolio img {
