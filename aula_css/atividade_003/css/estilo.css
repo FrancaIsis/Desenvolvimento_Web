@@ -112,9 +112,9 @@ nav a {
   margin-top: 3%;
   margin-left: 10%;
   border-style: groove;
-  /* box-shadow: 2px, 2px, 2px rgb(211, 139, 76); */
+  box-shadow: 2px, 6px, 2px rgb(240, 113, 1); 
   border-radius: 5px;
-  border-color: #d38b4c;
+  /* border-color: #d7cdc4; */
   padding: 8px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
@@ -139,7 +139,9 @@ nav a {
   padding: 10px;
   border-radius: 8px;
   width: 80%;
-  border: 2px solid #d38b4c;
+  /* border: 2px solid #d38b4c; */
+  border-style: groove;
+  box-shadow: 2px, 6px, 2px rgb(240, 113, 1);
 }
 /* Estiliza os rotulos dos inputs */
 label {
@@ -300,13 +302,22 @@ button:hover {
   float: left;
 }
 
-blockquote {
+.blockquote-left {
   width: 100%;
   font-style: italic;
   color: #555;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 18px;
+  text-align: left;
 }
+.blockquote-right {
+    width: 100%;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: right;
+  }
 
 /* Portifólio */
 
