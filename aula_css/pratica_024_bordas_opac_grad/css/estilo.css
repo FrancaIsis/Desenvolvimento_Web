@@ -163,3 +163,41 @@ body{
     #b053c2,
     #c256c9); /* gradiente com multiplas cores*/
 }
+/* Estilos do rodapé */
+.rodape{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+.rodape p{
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+/* Estilos para codigo (elementos code) */
+code{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f0f0;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+}
+/* responsividade - ajustes para telas menores */
+@media (max-width: 768px){
+    .navegacao ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navegacao li{
+        margin: 0.5rem;
+    }
+    .exemplo-opacidade-container{
+        flex-wrap: wrap;
+    }
+    .exemplo-opacidade{
+        width: 30%;
+        margin-bottom: 1rem;
+    }
+}
