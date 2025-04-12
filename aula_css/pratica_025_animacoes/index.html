@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animação Simples com CSS3</title>
+    <style>
+      /*Estilos para o corpo dsa página */
+      body {
+        display: flex; /* usa flexbox para centralizar*/
+        justify-content: center; /* centraliza hotizontalmente*/
+        align-items: center; /*centraliza verticalmente*/
+        height: 100vh; /* altura total viewport*/
+        background-color: #f0f0f0;
+      }
+      /*estilos para a caixa que será animada*/
+      .caixa {
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+        border-radius: 10px;
+        /*propriedades da animação */
+        animation: moverEColorir 4s ease-in-out infinite alternate;
+        /*nome da animação: moverEColorir*/
+        /*duração: 4 segundos*/
+        /*timing function: ease-in-out(suaviza inicio e fim)*/
+        /*Iterações: infinite (repete infinitamente)*/
+        /*Direção: alternate (vai e volta)*/
+      }
+    </style>
+  </head>
+  <body></body>
+</html>
