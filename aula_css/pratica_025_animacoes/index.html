@@ -27,7 +27,28 @@
         /*Iterações: infinite (repete infinitamente)*/
         /*Direção: alternate (vai e volta)*/
       }
+      /* Definição dos keyframes (quadros-chaves) da animação */
+      @keyframes moverEColorir{
+        /* Estado inicial (0% do tempo de animação)*/
+        0%{
+          transform: translateY(0); /*Posição vertical inicial*/
+          background-color: #3498db;
+        }
+        /*Estado intermediario (50% do tempo de animação)*/
+        50%{
+          transform: translateY(-100px);/*Move 100px para cima */
+          background-color: #e74c3c;
+        }
+        /*Estado final (100% do tempo de animação)*/
+        50%{
+          transform: translateY(0);/* Volta a posição inicial */
+          background-color: #2ecc71;
+      }
+    }
     </style>
   </head>
-  <body></body>
+  <body>
+    <!-- Div que receberá a animação -->
+    <div class="caixa"></div>
+  </body>
 </html>
