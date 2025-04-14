@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animação 3D com CSS</title>
+    <style>
+      /* Estilo do corpo da página */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* altura total da viewport*/
+        background-color: #f0f0f0;
+        perspective: 1000px; /*define a profundidade do espaço 3D*/
+        overflow: hidden; /*esconde qualquer conteúdo que ultrapasse*/
+      }
+
+      /* container da cena 3D - onde a mágica acontece*/
+      .cena-3d {
+        width: 200px; /* largura do cubo*/
+        height: 200px; /* altura do cubo*/
+        position: relative; /* permite posicionamento absoluto dos filhos*/
+        transform-style: preserve-3d; /*MUITO IMPORTANTE:mantém transfomações 3D nos filhos*/
+        animation: girar 8s infinite linear; /*Aplica animação na rotação*/
+      }
+      /*Definição da animação de rotação*/
+      @keyframes girar {
+        from {
+          transform: rotate(0deg) rotate(0deg);
+        } /*Estado inicial*/
+        to {
+          transform: rotate(360deg) rotate(360deg);
+        } /*Estado final*/
+      }
+      /*Estilo base para todas as faces do cubo*/
+      .face {
+        position: absolute; /*posicionamento absoluto da cena*/
+        width: 200px; /*largura igual do container*/
+        height: 200px; /*altura igual do container*/
+        opacity: 0.8; /*leve transparencia para efeito visual*/
+        display: flex; /*flexbox para centralizar conteudo*/
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: bold; /*texto em negrito*/
+        color: white;
+        border: 2px solid white; /*borda branca*/
+        box-sizing: border-box; /*inclui borda no calculo do tamanho*/
+      }
+      /*POSICIONAMENTO DAS FACES DO CUBO (cada face tem uma transformação unica)*/
+      /*face frontal - posicionada 100px "para frente" no eixo z*/
+      .frente {
+        transform: translateZ(100px);
+        background-color: #3498db;
+      }
+      /*face traseira - posicionada 100px "para trás" e rotacionada 180° em Y*/
+      .tras {
+        transform: translateZ(-100px) rotateY(180deg);
+        background-color: #e74c3c;
+      }
+      /* face direita - movida para direita no X e rotacionada 90° em Y*/
+      .direita {
+        transform: translateX(100px) rotateY(90deg);
+        background-color: #2ecc71;
+      }
+      /* face esquerda - movida para esquerda no X e rotacionada -90° em Y*/
+      .esquerda {
+        transform: translateX(-100px) rotateY(-90deg);
+        background-color: #f1c40f;
+      }
+      /* face superior - movida para cima no Y e rotacionada 90° em X*/
+      .topo {
+        transform: translateY(-100px) rotateX(90deg);
+        background-color: #9b59b6;
+      }
+      /*face inferior - movida para baixo no Y e rotacionada -90° em X*/
+      .base {
+        transform: translateY(100px) rotateX(-90deg);
+        background-color: #1abc9c;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- container principal da animação 3D -->
+    <div class="cena-3d">
+      <!-- cada div representa uma face do cubo -->
+      <div class="face frente">Frente</div>
+      <div class="face tras">Trás</div>
+      <div class="face direita">Direita</div>
+      <div class="face esquerda">Esquerda</div>
+      <div class="face topo">Topo</div>
+      <div class="face base">Base</div>
+    </div>
+  </body>
+</html>
