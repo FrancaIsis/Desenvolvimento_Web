@@ -1,0 +1,90 @@
+/* zerando os estilos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurando o corpo */
+body{
+    min-height: 100vh; /* garante que o body ocupe pelo menos toda a altura da tela*/
+    display: flex; /*ativa o flexbox do body*/
+    flex-direction: column;/*organiza os filhos em coluna(header, main, footer)*/
+}
+.banner{
+    background-color: #009FB7;
+    padding: 40px 20px; /*inferio e superior, esquerdo e direito*/
+    text-align: center;
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+}
+nav{
+    text-align: center;
+    margin-top: 30px;
+}
+/* menu */
+.menu-submenu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #009FB7;
+}
+.menu-submenu li{
+    margin-right: 20px;
+    position: relative;
+}
+.menu-submenu a{
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    display: block;
+}
+/* submenu escondido */
+.menu-submenu ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #009FB7;
+    list-style-type: none;
+    padding: 0;
+
+}
+/* mostrar menu qdo passar o mouse */
+.menu-submenu ul li:hover > ul{
+    display: block;
+}
+
+.menu-submenu ul ul li{
+    width: 180px;
+    border-bottom: 1px solid #ffffff33;
+}
+.menu-submenu ul ul li a{
+    padding: 10px;
+    color: white;
+}
+/* Estilos usando IDs */
+#titulo{
+    font-size: 52px;
+    text-align: center;
+    color: white;
+}
+
+.rodape{
+    background-color: #009FB7;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    /* Flexbox para organizar múltiplos elementos no rodapé */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+}

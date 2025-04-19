@@ -13,7 +13,7 @@ body{
     flex-direction: column;/*organiza os filhos em coluna(header, main, footer)*/
 }
 
-/* Estilo básico para todas as seções (apenas pata visualização durante o desenvolvimento */
+/* Estilo básico para todas as seções (apenas para visualização durante o desenvolvimento */
 header, nav, main, section, aside, footer{
     padding: 20px;
     border: 1px dashed #ccc; /*bora tracejada para visualização*/
@@ -33,6 +33,7 @@ header, nav, main, section, aside, footer{
     align-items: center; /* alinha horizontalmente*/
     min-height: 150px; /*altura mínima*/
 }
+
 
 /* Módulo 3 - estilização da navegação */
 .navegacao{
