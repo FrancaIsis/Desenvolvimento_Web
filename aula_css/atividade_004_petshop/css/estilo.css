@@ -32,7 +32,7 @@ nav{
 /* menu */
 .menu-submenu ul{
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -99,10 +99,10 @@ nav{
 }
 
 .rodape{
-    background-color: #009FB7;
+    background-color: #6E72FF;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     /* Flexbox para organizar múltiplos elementos no rodapé */
     display: flex;
     flex-direction: column;
