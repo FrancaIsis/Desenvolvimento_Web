@@ -12,7 +12,7 @@ body{
     flex-direction: column;/*organiza os filhos em coluna(header, main, footer)*/
 }
 .banner{
-    background-image: url("../img/banner.png");
+    background-image: url("../img/banner3.png");
     /* background-color: #009FB7; */
     background-repeat: no-repeat;
     background-size: cover;
