@@ -24,7 +24,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 150px;
+    min-height: 250px;
 }
 nav{
     text-align: center;
@@ -86,11 +86,18 @@ nav{
     flex-direction: row;
     margin-left: 17%;
     margin-right: 17%;
+    padding: 20px;
 }
 .centro{
     background-color: #f4f4f4;
     flex: 3;
     min-height: 400px;
+}
+.produtos{
+    background-color: #f4f4f4;
+    flex: 3;
+    min-height: 250px;
+    margin-top: 20px;
 }
 .barra-esquerda{
     background-color: #e4e4e4;
@@ -139,13 +146,17 @@ nav{
     justify-content: center; /* Centraliza as caixinhas no container */
 }
 .caixinhas-oferta {
-    width: 200px;
+    width: 300px;
     box-shadow: 2px 5px 8px 8px rgba(233, 140, 140, 0.1);
     text-align: center;
     border-radius: 10px;
     margin-bottom: 1%;
     transition: all 0.3s ease;/*animação*/
   }
+.caixinhas-oferta > .caixinhas-produtos{
+    height: 200px;
+    gap: 20px;
+}
   
 .caixinhas-oferta img {
     width: 100%;
@@ -195,9 +206,50 @@ nav{
     line-height: 1.5;
 }
 /* PAGINA PRODUTOS */
-.caixinhas-oferta>.banner-produtos{
-    width: 250px;
+.container-produtos{
+    display: flex;
+    flex-direction: column; /*horizontal*/
+    height: 100vh;/*100vh*/
+   
+    padding: 10px;
+    margin-left: 17%;
+    margin-right: 17%;
+   
+    gap: 10px;
 }
+.produtos-flex{
+    /* height: 200px; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color:#f4f4f4;
+    flex: 3;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    /* height: 100%; */
+    
+}
+.produtos-flex1, .produtos-flex2, .produtos-flex3{
+    flex: 3;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.produtos-flex1{
+    background-color: purple;
+    
+}
+.produtos-flex2{
+    background-color: yellow;
+}
+.produtos-flex3{
+    background-color: green;
+}
+
+
 /* -- */
 /* Responsividade */
 @media(max-width: 768px){
