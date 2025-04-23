@@ -124,6 +124,10 @@ nav{
     display: flex;
     flex-direction: column;
 }
+.texto-com-imagem > .contato{
+    box-shadow: none;
+    width: 90%;
+}
 .texto-com-imagem img{
     width: 100%;
     /* height: auto; */
@@ -232,6 +236,9 @@ nav{
     justify-content: center;
     align-items: center;
 }
+.container-produtos > .dicas{
+    width: 100%;
+}
 .produtos-flex{
     display: flex;
     flex-wrap: wrap;
@@ -270,7 +277,60 @@ nav{
   }
 
 /* --- */
-
+/* CONTATOS */
+/* formulario */
+/* estiliza o conteiner do formulario */
+.formulario {
+    height: 50%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    /* background: #f6ecea; */
+    padding: 10px;
+    border-radius: 8px;
+    width: 80%;
+    /* border: 2px solid #d38b4c; */
+    border-style: groove;
+    box-shadow: 2px, 6px, 2px rgb(240, 113, 1);
+  }
+  /* Estiliza os rotulos dos inputs */
+  label {
+    display: block;
+    margin-top: 10px;
+    /* font-weight: bold; */
+    text-align: left;
+    font-size: 18px;
+  }
+  /* Estiliza os campos de entrada de texto e email */
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 98%;
+    padding: 1%;
+    margin-top: 1%;
+    border: 0.1px solid #ffe4cc;
+    border-radius: 4px;
+    background-color: #e4e2df;
+    height: auto;
+  }
+  
+  /* Estliza o botao de envio */
+  button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #6E72FF;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #E249CD;
+  }
 /* -- */
 /* Responsividade */
 @media(max-width: 768px){

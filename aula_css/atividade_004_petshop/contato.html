@@ -18,40 +18,90 @@
       <!-- <h1 id="titulo">PetLândia</h1>  -->
     </header>
     <nav class="menu-submenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="produtos.html">Produtos</a>
-            <ul class="submenu">
-              <li><a href="#caes">Cães</a></li>
-              <li><a href="#gatos">Gatos</a></li>
-              <li><a href="#aves">Aves</a></li>
-              <li><a href="#peixes">Peixes</a></li>
-              <li><a href="#outros">Outros</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="servicos.html">Serviços</a>
-            <ul class="submenu">
-              <li><a href="banho_tosa.html">Banho e Tosa</a></li>
-              <li><a href="#consultas">Consultas Veterinárias</a></li>
-              <li><a href="#hospedagem">Hospedagem</a></li>
-            </ul>
-          </li>
-          <li><a href="adocao.html">Adoção</a></li>
-          <li><a href="dicas.html">Dicas de Especialistas</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>
-    <main>
-        <p>conteudo</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="produtos.html">Produtos</a>
+          <ul class="submenu">
+            <li><a href="#caes">Cães</a></li>
+            <li><a href="#gatos">Gatos</a></li>
+            <li><a href="#aves">Aves</a></li>
+            <li><a href="#peixes">Peixes</a></li>
+            <li><a href="#outros">Outros</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="servicos.html">Serviços</a>
+          <ul class="submenu">
+            <li><a href="banho_tosa.html">Banho e Tosa</a></li>
+            <li><a href="#consultas">Consultas Veterinárias</a></li>
+            <li><a href="#hospedagem">Hospedagem</a></li>
+          </ul>
+        </li>
+        <li><a href="adocao.html">Adoção</a></li>
+        <li><a href="dicas.html">Dicas de Especialistas</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <main class="principal">
+      <section class="texto-com-imagem">
+        <div class="contato">
+          <h3>Fale com a Petlândia</h3>
+          <p>
+            Tem alguma dúvida, sugestão ou precisa de ajuda? Estamos aqui para
+            ouvir você! Na <strong>Petlândia</strong>, o bem-estar dos nossos
+            clientes – humanos e pets – vem sempre em primeiro lugar. Preencha o
+            formulário abaixo e entraremos em contato o mais rápido possível.
+            Será um prazer conversar com você!
+          </p>
+        </div>
+        <div class="formulario">
+          <form action="" method="post">
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" name="nome" required />
+            <br />
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seuemail@dominio.com"
+            />
+            <br />
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="4"
+              required
+            ></textarea>
+            <br />
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+        <div class="contato">
+          <h3>Outras formas de contato</h3>
+          <p>
+            Se preferir, você também pode falar com a gente por telefone ou
+            e-mail. Nossa equipe está disponível para tirar dúvidas, receber
+            sugestões e ajudar no que for preciso!<br>
+            📞 Telefone/WhatsApp: (32)99999-1234 <br>
+            📧 E-mail geral: atendimento@petlandia.com.br <br>
+            📧 E-mail comercial: comercial@petlandia.com.br <br>
+            🕐 Atendimento de segunda a sexta, das 9h às 18h. <br>
+            Estamos sempre prontos para ouvir você e
+            cuidar com carinho de quem mais importa: seu pet!
+          </p>
+        </div>
+      </section>
     </main>
     <footer class="rodape">
-        <p>&copy; 2025 PetLândia - Todos os direitos reservados</p>
-        <p>
-          Rua dos Animais Felizes, 123 - Jardim das Tulipas, São Paulo - SP,
-          04567-890.
-        </p>
-      </footer>
-    </body>
-  </html>
+      <p>&copy; 2025 PetLândia - Todos os direitos reservados</p>
+      <p>
+        Rua dos Animais Felizes, 123 - Jardim das Tulipas, São Paulo - SP,
+        04567-890.
+      </p>
+    </footer>
+  </body>
+</html>
