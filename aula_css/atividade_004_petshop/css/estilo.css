@@ -12,6 +12,8 @@ body{
     flex-direction: column;/*organiza os filhos em coluna(header, main, footer)*/
     background-color:#F2F2F2;
 }
+main{flex: 1;
+}
 .banner{
     background-image: url("../img/banner3.png");
     /* background-color: #009FB7; */
@@ -124,7 +126,7 @@ nav{
 }
 .texto-com-imagem img{
     width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 /* divisor */
 .divisor{    
@@ -153,19 +155,32 @@ nav{
     margin-bottom: 1%;
     transition: all 0.3s ease;/*animação*/
   }
-.caixinhas-oferta > .caixinhas-produtos{
-    height: 200px;
-    gap: 20px;
-}
+/* .caixinhas-oferta > .caixinhas-produtos{
+    /* height: 100px; *
+    
+} */
   
 .caixinhas-oferta img {
     width: 100%;
     height: auto;    
 }
+.caixinhas-produtos img{
+    width: auto;
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+.container-produtos > p{
+    font-size: 14px;
+    line-height: 1.0;
+
+}
 /*animação*/
 .caixinhas-oferta:hover{
     transform: scale(1.05);
-    box-shadow:0 5px 15px rgba(0, 0, 0, 0.2) ;
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.2) ;
 }
 /* ---- */
 .parallax{
@@ -209,46 +224,52 @@ nav{
 .container-produtos{
     display: flex;
     flex-direction: column; /*horizontal*/
-    height: 100vh;/*100vh*/
-   
+    /* height: 100vh;100vh    */
     padding: 10px;
     margin-left: 17%;
-    margin-right: 17%;
-   
-    gap: 10px;
+    margin-right: 17%;   
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
 }
 .produtos-flex{
-    /* height: 200px; */
-    justify-content: center;
-    align-items: center;
     display: flex;
-    background-color:#f4f4f4;
-    flex: 3;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    /* height: 100%; */
-    
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin-bottom: 20px;    
 }
 .produtos-flex1, .produtos-flex2, .produtos-flex3{
-    flex: 3;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-.produtos-flex1{
-    background-color: purple;
-    
-}
-.produtos-flex2{
-    background-color: yellow;
-}
-.produtos-flex3{
-    background-color: green;
+    background-color: #fefefe;
 }
 
+/* Banho e tosa */
+.tabela-precos {
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  .tabela-precos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .tabela-precos th,
+  .tabela-precos td {
+    border: 1px solid #6E72FF;
+    padding: 8px;
+  }
+  
+  .tabela-precos th {
+    background-color: #f0f0f0;
+  }
+
+/* --- */
 
 /* -- */
 /* Responsividade */
