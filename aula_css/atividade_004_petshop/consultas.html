@@ -18,41 +18,157 @@
       <!-- <h1 id="titulo">PetLândia</h1>  -->
     </header>
     <nav class="menu-submenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="produtos.html">Produtos</a>
-            <ul class="submenu">
-              <li><a href="#caes">Cães</a></li>
-              <li><a href="#gatos">Gatos</a></li>
-              <li><a href="#aves">Aves</a></li>
-              <li><a href="#peixes">Peixes</a></li>
-              <li><a href="#outros">Outros</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="servicos.html">Serviços</a>
-            <ul class="submenu">
-              <li><a href="banho_tosa.html">Banho e Tosa</a></li>
-              <li><a href="consultas.html">Consultas Veterinárias</a></li>
-              <li><a href="hospedagem.html">Hospedagem</a></li>
-            </ul>
-          </li>
-          <li><a href="adocao.html">Adoção</a></li>
-          <li><a href="dicas.html">Dicas de Especialistas</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>
-    <main>
-      
-        
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="produtos.html">Produtos</a>
+          <!-- <ul class="submenu">
+            <li><a href="#caes">Cães</a></li>
+            <li><a href="#gatos">Gatos</a></li>
+            <li><a href="#aves">Aves</a></li>
+            <li><a href="#peixes">Peixes</a></li>
+            <li><a href="#outros">Outros</a></li>
+          </ul> -->
+        </li>
+        <li>
+          <a href="servicos.html">Serviços</a>
+          <ul class="submenu">
+            <li><a href="banho_tosa.html">Banho e Tosa</a></li>
+            <li><a href="consultas.html">Consultas Veterinárias</a></li>
+            <!-- <li><a href="hospedagem.html">Hospedagem</a></li> -->
+          </ul>
+        </li>
+        <li><a href="adocao.html">Adoção</a></li>
+        <li><a href="dicas.html">Dicas de Especialistas</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <main class="principal">
+      <section class="centro">
+        <div>
+          <h3>Consultas Veterinárias</h3>
+          <p>
+            Na <strong>PetLândia</strong>o bem-estar do seu pet é a nossa
+            prioridade! Contamos com uma equipe de veterinários experientes e
+            apaixonados por animais, prontos para oferecer um atendimento
+            completo e humanizado para cães, gatos e outros pets.
+          </p>
+          <h3>Como funciona o agendamento?</h3>
+          <p>
+            Para garantir um atendimento ágil e personalizado, trabalhamos com
+            consultas mediante agendamento prévio. Assim, evitamos longas
+            esperas e garantimos mais conforto para você e seu companheiro de
+            quatro patas.
+            <br />
+            Você pode agendar uma consulta para:
+          </p>
+          <ul>
+            <li>Avaliação de rotina e check-ups</li>
+            <li>Atendimento clínico em caso de sintomas</li>
+            <li>Atualização de vacinas</li>
+            <li>Acompanhamento de tratamentos</li>
+            <li>Orientações sobre cuidados, alimentação e bem-estar</li>
+          </ul>
+          <br>
+          <h3>Agende sua consulta agora mesmo!</h3>
+          <p>
+            Preencha o formulário abaixo com seus dados e as informações do seu
+            pet. Em breve, nossa equipe entrará em contato para confirmar o
+            melhor horário para você.
+          </p>
+        </div>
+        <div class="formulario">
+          <form action="" method="post">
+            <label>Informações do Tutor</label>
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" name="nome" required />
+            <br />
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seuemail@dominio.com"
+            />
+            <br />
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required/>
+            <br />
+            <label>Informações do Pet</label>
+            <label for="nomepet">Nome: </label> 
+            <input type="text" id="nomepet" name="nomepet" required />
+            <br />
+            <label for="especie">Espécie: </label> 
+            <input type="text" id="especie" name="especie" required />
+            <br />
+            <label for="raca">Raça: </label> 
+            <input type="text" id="raca" name="raca" required />
+            <br />
+            <label for="idade">Idade: </label> 
+            <input type="text" id="idade" name="idade" required />
+            <br />
+            <label>Gênero:</label>
+              <div class="grupo-radio">
+                <input
+                  type="radio"
+                  id="masculino"
+                  name="genero"
+                  value="masculino"
+                />
+                <label for="masculino">Masculino</label>
+
+                <input
+                  type="radio"
+                  id="feminino"
+                  name="genero"
+                  value="feminino"
+                />
+                <label for="feminino">Feminino</label>
+
+                <input type="radio" id="outro" name="genero" value="outro" />
+                <label for="outro">Outro</label>
+                </div>
+                <br/>
+                <label>Castrado:</label>
+              <div class="grupo-radio">
+                <input
+                  type="radio"
+                  id="sim"
+                  name="castrado"
+                  value="sim"
+                />
+                <label for="sim">Sim</label>
+
+                <input
+                  type="radio"
+                  id="nao"
+                  name="castrado"
+                  value="nao"
+                />
+                <label for="nao">Não</label>
+                </div>
+                <br>
+              <label for="data">Data desejada:</label>
+              <input type="text" id="data" name="data" required />
+
+              <label for="periodo">Período: </label>
+              <select id="periodo" name="periodo">
+                <option value="selecione">Selecione</option>
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+              </select>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer class="rodape">
-        <p>&copy; 2025 PetLândia - Todos os direitos reservados</p>
-        <p>
-          Rua dos Animais Felizes, 123 - Jardim das Tulipas, São Paulo - SP,
-          04567-890.
-        </p>
-      </footer>
-    </body>
-  </html>
+      <p>&copy; 2025 PetLândia - Todos os direitos reservados</p>
+      <p>
+        Rua dos Animais Felizes, 123 - Jardim das Tulipas, São Paulo - SP,
+        04567-890.
+      </p>
+    </footer>
+  </body>
+</html>

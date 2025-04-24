@@ -10,7 +10,7 @@ body{
     min-height: 100vh; /* garante que o body ocupe pelo menos toda a altura da tela*/
     display: flex; /*ativa o flexbox do body*/
     flex-direction: column;/*organiza os filhos em coluna(header, main, footer)*/
-    background-color:#F2F2F2;
+    background-color:#f0f4f8;
 }
 main{flex: 1;
 }
@@ -84,12 +84,16 @@ nav{
 /* conteudo principal */
 .principal{
     display: flex;
-    /*flex: 1;ocupa todo o espaço disponivel*/
     flex-direction: row;
     margin-left: 17%;
     margin-right: 17%;
     padding: 20px;
+    box-shadow: 2px 5px 8px 8px rgba(233, 140, 140, 0.1);
 }
+.principal.sem-sombra {
+    box-shadow: none;
+    padding: 0;
+  }
 .centro{
     background-color: #f4f4f4;
     flex: 3;
@@ -101,22 +105,11 @@ nav{
     min-height: 250px;
     margin-top: 20px;
 }
-.barra-esquerda{
-    background-color: #e4e4e4;
-    flex: 1;/*ocupa uma parte do espaço disponivel*/
-}
-.barra-esquerda img{
-    width: 100%;
-    height: 20%;
-}
-.barra-direita{
-    background-color: #e4e4e4;
-    flex: 1;/*ocupa uma parte do espaço disponivel*/
-}
+
 .texto-com-imagem{
     width: 100%;
     height: auto;
-    box-shadow: 2px 5px 8px 8px rgba(233, 140, 140, 0.1);
+    /* box-shadow: 2px 5px 8px 8px rgba(233, 140, 140, 0.1); */
     border-radius: 8px;
     margin-bottom: 1%;
     justify-content: center;
@@ -127,10 +120,13 @@ nav{
 .texto-com-imagem > .contato{
     box-shadow: none;
     width: 90%;
+    margin-top: 5%;
+}
+.contato p{
+    line-height: 2.0;
 }
 .texto-com-imagem img{
     width: 100%;
-    /* height: auto; */
 }
 /* divisor */
 .divisor{    
@@ -153,16 +149,17 @@ nav{
 }
 .caixinhas-oferta {
     width: 300px;
-    box-shadow: 2px 5px 8px 8px rgba(233, 140, 140, 0.1);
+    box-shadow: 2px 2px 2px 2px rgba(233, 140, 140, 0.1);
     text-align: center;
     border-radius: 10px;
     margin-bottom: 1%;
     transition: all 0.3s ease;/*animação*/
   }
-/* .caixinhas-oferta > .caixinhas-produtos{
-    /* height: 100px; *
-    
-} */
+ 
+  .produtos .caixinhas-oferta:hover{
+    transform: none;
+    box-shadow: none;
+  }
   
 .caixinhas-oferta img {
     width: 100%;
@@ -197,7 +194,6 @@ nav{
 
 /* Segunda imagem de fundo */
 .parallax2{
-    /* background-image:url(''); */
     background-image: url('../img/racao.jpg');
 }
 .content{
@@ -228,7 +224,6 @@ nav{
 .container-produtos{
     display: flex;
     flex-direction: column; /*horizontal*/
-    /* height: 100vh;100vh    */
     padding: 10px;
     margin-left: 17%;
     margin-right: 17%;   
@@ -245,12 +240,12 @@ nav{
     gap: 20px;
     justify-content: center;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #fff6ec;
     border-radius: 10px;
     margin-bottom: 20px;    
 }
 .produtos-flex1, .produtos-flex2, .produtos-flex3{
-    background-color: #fefefe;
+    background-color: #f0f4f9;
 }
 
 /* Banho e tosa */
@@ -276,20 +271,30 @@ nav{
     background-color: #f0f0f0;
   }
 
-/* --- */
+/* Consultas */
+ul{
+    list-style-type: circle;
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    margin-bottom: 5px;    
+    margin-left: 30px;
+}
+
+
 /* CONTATOS */
 /* formulario */
 /* estiliza o conteiner do formulario */
 .formulario {
-    height: 50%;
+    height: auto;
     margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 5%;
-    /* background: #f6ecea; */
     padding: 10px;
     border-radius: 8px;
-    width: 80%;
+    width: 60%;
     /* border: 2px solid #d38b4c; */
     border-style: groove;
     box-shadow: 2px, 6px, 2px rgb(240, 113, 1);
@@ -298,7 +303,6 @@ nav{
   label {
     display: block;
     margin-top: 10px;
-    /* font-weight: bold; */
     text-align: left;
     font-size: 18px;
   }
@@ -331,6 +335,15 @@ nav{
   button:hover {
     background-color: #E249CD;
   }
+  .grupo-radio{
+    text-align: left;
+    margin-top: 5px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    /* Centraliza radio/checkbox com label */
+    line-height: 2px;
+}
 /* -- */
 /* Responsividade */
 @media(max-width: 768px){
