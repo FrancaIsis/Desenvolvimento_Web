@@ -2,27 +2,29 @@
 document.addEventListener('DOMContentLoaded', function(){
     
     //obter o numero digitado pelo usuario
-    const num = parseInt(document.getElementById('num').value);
+    const input = document.getElementById('num');
 
     //obter a referencia ao botao com id btnVerificar
     const btn = document.getElementById('btnVerificar');
 
     //obter a referencia ao elemento onde o resultado será exibido
-    const resultado
+    const resultado = document.getElementById('resposta')
 
-    //resultado
-    let resultado;
+    // adiciona o ouvinte do evento ao botão para reagir ao clique
+    btn.addEventListener('click',function(){
 
-    // adiciona o ouvinte do evento ao botão para reagit ao clique
+        const num = parseInt(input.value);     
+        if(num > 0){
+                resultado.textContent = "Número positivo";
+        }else if(num < 0){
+                resultado.textContent = "Número negativo";
+        }
+        else{
+            resultado.textContent = "Zero";
+        }   
+        
 
-    if(num > 0){
-            resultado = "Número positivo";
-    }else if(num < 0){
-            resultado = "Número negativo";
-    }
-    else{
-
-    }
+    })
 
     
 })
