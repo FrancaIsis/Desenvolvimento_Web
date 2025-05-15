@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function(){
         const num = document.getElementById('numero').value.trim();
         // transformando em inteiro
         fator = parseInt(num);
-        for(let i=0; i<=9; i++){
+        for(let i=0; i<=10; i++){
             const li = document.createElement('li');
             li.textContent = fator * i;
             ulLista.appendChild(li);
