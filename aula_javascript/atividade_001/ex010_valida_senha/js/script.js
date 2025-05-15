@@ -5,39 +5,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
      // funções para verificar cada situação
         function maiuscula(senhaVerificada){
-            for(let i; i < senhaVerificada.length; i++){
+            for(let i=0; i < senhaVerificada.length; i++){
                 const letra = senhaVerificada[i];
                 if(letra >= 'A' && letra <= 'Z'){
                     return true;
                 }
-                else{
-                    return false;
-                }
             }
-        }
+                 return false;
+                
+            }
+        
 
         function minuscula(senhaVerificada){
-            for(let i; i < senhaVerificada.length; i++){
+            for(let i=0; i < senhaVerificada.length; i++){
                 const letra = senhaVerificada[i];
                 if(letra >= 'a' && letra <= 'z'){
                     return true;
+                    }
                 }
-                else{
-                    return false;
-                }
+                return false;
+                
             }
-        }
+        
 
         function numero(senhaVerificada){
-            for(let i; i < senhaVerificada.length; i++){
+            for(let i=0; i < senhaVerificada.length; i++){
                 const letra = senhaVerificada[i];
                 if(letra >= '0' && letra <= '9'){
                     return true;
                 }
-                else{
-                    return false;
-                }
             }
+            return false;
+             
         }
         
     
@@ -57,6 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
         else{
             resposta.textContent = 'Senha fraca';
         }
-    })
+    });
 
-})
+});
