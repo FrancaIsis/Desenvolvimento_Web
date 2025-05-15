@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // verificando se é palindromo ao receber o click no botao
     document.getElementById('btnVerificar').addEventListener('click', function(){
-        // recebendo o texto digitado e eleiminando os espaços vazios
+        // recebendo o texto digitado e eliminando os espaços vazios
         const valor = texto.value.trim();
         // fatiando o texto
         const contrario = valor.split('');
