@@ -3,16 +3,23 @@ Crie um campo de senha e um elemento para mostrar se a senha é
 forte (contém letras maiúsculas, minúsculas, números e tem pelo menos 8 caracteres). -->
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Validador de senha</title>
-</head>
-<body>
-    <label for="senha">Digite a senha</label>
-    <input type="password" id="senha"/>
-    <button id="btnVerificar">Verificar</button>
-    <p id="resultado"></p>  
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <div class="espaco">
+      <label for="senha">Digite a senha</label>
+      <br />
+      <hr />
+      <input type="password" id="senha" />
+      <br />
+      <button id="btnVerificar" class="botao">Verificar</button>
+      <br />
+      <p id="resultado"></p>
+    </div>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

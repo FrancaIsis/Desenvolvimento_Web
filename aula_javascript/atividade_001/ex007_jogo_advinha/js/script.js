@@ -12,9 +12,25 @@ document.addEventListener("DOMContentLoaded", function () {
   //testando ao click do botao
   document.getElementById("btnVerificar").addEventListener("click", function () {
       const tentativa = parseInt(numUsuario.value);
+      // se o usuario nao digitar um numero
+      if(isNaN(tentativa)){
+        resposta.textContent = "Digite um número inteiro";
+        dica.textContent = '';
+        return;
+      }
+
+      // se o usuario digitar um numero maior que 10 ou menor que 1
+      if(tentativa < 1 || tentativa > 10){
+        resposta.textContent = "Digite um número entre 1 e 10";
+        dica.textContent = '';
+        return;
+      }
+
       if (numSorteado === tentativa) {
         resposta.textContent = "Parabéns, você acertou!";
         dica.textContent = '';
+        
+
       } else if (numSorteado > tentativa) {
         dica.textContent = "Tente um número maior";
         resposta.textContent = '';

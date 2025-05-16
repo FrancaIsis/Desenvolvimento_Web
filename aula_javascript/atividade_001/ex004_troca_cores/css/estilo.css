@@ -1,3 +1,22 @@
+/* resetando */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #578b7c50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+h1{
+    text-align: center;
+}
+
 #quadrado{
     border-radius: 5px;
     border-color: black;
@@ -5,4 +24,32 @@
     width: 200px;
     height: 200px;
     border: 2px solid;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    
+}
+.botao {
+  background-color: rgba(134, 136, 161, 0.377);
+  border: 1px solid #dcdfe3;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 90px;
+  justify-content: center;
+  text-align: center;
+}
+.espaco{
+  background-color: #ffffff3d;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  width: 520px;
+  height: 400px;  
+  text-align: center;
 }

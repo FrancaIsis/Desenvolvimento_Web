@@ -9,21 +9,26 @@ document.addEventListener('DOMContentLoaded', function(){
     // verificando se é palindromo ao receber o click no botao
     document.getElementById('btnVerificar').addEventListener('click', function(){
         // recebendo o texto digitado e eliminando os espaços vazios
-        const valor = texto.value.trim();
+        const valor = texto.value.trim().toLowerCase();
         // fatiando o texto
         const contrario = valor.split('');
         // invertendo a lista
         contrario.reverse();
         // juntando
         const contrarioInvertido = contrario.join('');
-
-        if(valor === contrarioInvertido){
-            resultado.textContent = 'É um palíndromo';
+        if(valor!= ''){
+            if(valor === contrarioInvertido){
+                resultado.textContent = 'É um palíndromo';
+            } else {
+                resultado.textContent = "Não é um palíndromo";
+            }
         }
         else{
-            resultado.textContent = "Não é um palíndromo";
+            resultado.textContent = "Digite algo";
         }
+    
+        
 
     });
+  });
 
-});
