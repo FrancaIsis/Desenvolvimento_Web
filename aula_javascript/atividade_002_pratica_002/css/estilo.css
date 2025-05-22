@@ -1,0 +1,39 @@
+/* resetando */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #578b7c50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+#espaco{
+  background-color: #8513133d;  
+  width: 100%;
+  height: 100%;  
+  text-align: center;
+}
+#quadrado{
+    border-radius: 5px;
+    border-color: black;
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    border: 2px solid;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    
+}
+
+#textoQuadrado{
+    color: black;
+}

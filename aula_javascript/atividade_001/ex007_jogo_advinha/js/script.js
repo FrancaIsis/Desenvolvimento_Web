@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // receber o elemnto que mostrara a dica
   const dica = document.getElementById("obs");
   // numero sorteado
-  let numSorteado = Math.floor(Math.random() * 10) + 1; // random é de [0 a ]1, multiplica por 10 pra ir de 0 a 9, floor aredonda a pra baixo (9.999)
+  let numSorteado = Math.floor(Math.random() * 10) + 1; // random é de [0 a ]1, multiplica por 10 pra ir de 0 a 9, floor aRredonda a pra baixo (9.999)
 
   //testando ao click do botao
   document.getElementById("btnVerificar").addEventListener("click", function () {

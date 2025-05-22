@@ -1,0 +1,28 @@
+// Aguarda o carregamento completo do HTML antes de rodar o script
+document.addEventListener("DOMContentLoaded", function () {
+    // recebendo o elemento quadrado do html
+    const quadrado = document.getElementById('quadrado');
+    const espaco = document.getElementById('espaco');
+    const textoQuadrado = document.getElementById('textoQuadrado');
+    const fundo = document.getElementById('fundo');//pega a cor 
+    const texto = document.getElementById('texto');
+    const caixa = document.getElementById('caixa');
+
+    const corFundo = fundo.value;
+    const corTexto = texto.value;
+    const corCaixa = caixa.value;
+
+    fundo.addEventListener('click', function(){
+        espaco.style.backgroundColor = fundo;
+    });
+
+    texto.addEventListener('click', function(){
+        quadrado.style.color = corTexto;
+    });
+
+    caixa.addEventListener('click', function(){
+        textoQuadrado.style.backgroundColor = corCaixa;
+    });
+    
+
+});
