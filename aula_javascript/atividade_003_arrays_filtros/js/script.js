@@ -6,16 +6,20 @@ const produtos = [
 
 ];
 
+const categoriaEscolhida = document.getElementById('categoria').value;
+console.log(categoriaEscolhida)
+
 // filtrar
-document.getElementById('categoria').addEventListener('change', function(){
-    const categoriaEscolhida = categoria.value;
-    const generoAlimenticio = categoriaEscolhida.filter(function(produtos){
-        return produtos.categoria == 'categoria';
-    });
+
+// document.getElementById('categoria').addEventListener('change', function(){
+//     const categoriaEscolhida = categoria.value;
+//     const generoAlimenticio = categoriaEscolhida.filter(function(produtos){
+//         return produtos.categoria == 'categoria';
+//     });
 
 // exibindo o resultado
-    document.getElementById('resultado-filtrar').innerHTML = `
-    <strong>${generoAlimenticio}</strong>
-    `;
+//     document.getElementById('resultado-filtrar').innerHTML = `
+//     <strong>${generoAlimenticio}</strong>
+//     `;
     
-});
+// });
