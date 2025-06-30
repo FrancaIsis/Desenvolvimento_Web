@@ -15,11 +15,14 @@ Se o salário for entre R$1000,00 e R$1500,00 (inclusive), o salário permanece 
     <title>Letra D - Calculo salarial</title>
     <link rel="stylesheet" href="css/estilo.css" />
   </head>
+  <header>
+     <h1>Letra D - Calculo salarial</h1>
+  </header>
   <body>
-    <h1>Letra D - Calculo salarial</h1>
+    <div class="espaco">
+    <label for="salario">Informe seu salário atual:</label>
     <input
       type="number"
-      placeholder="Informe seu salário atual:"
       id="salario"
     />
     <br />
@@ -27,6 +30,7 @@ Se o salário for entre R$1000,00 e R$1500,00 (inclusive), o salário permanece 
     <button id="btnVerificar" class="botao">Verificar</button>
     <br />
     <ul id="resultado"></ul>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>

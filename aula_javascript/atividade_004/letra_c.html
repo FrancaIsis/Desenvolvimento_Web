@@ -6,11 +6,14 @@
     <title>Letra C - verificação de velocidade</title>
     <link rel="stylesheet" href="css/estilo.css" />
   </head>
-  <body>
+  <header>
     <h1>Letra C - verificação da velocidade de um veículo</h1>
+  </header>
+  <body>
+    <div class="espaco">
+    <label for="velocidade">Informe a velocidade do veículo:</label>
     <input
       type="number"
-      placeholder="Informe a velocidade do veículo:"
       id="velocidade"
     />
     <br />
@@ -18,6 +21,7 @@
     <button id="btnVerificar" class="botao">Verificar</button>
     <br />
     <ul id="resultado"></ul>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
