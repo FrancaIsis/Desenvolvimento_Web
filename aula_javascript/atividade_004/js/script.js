@@ -57,7 +57,7 @@ function VerificaNumero(){
 }
 verificar.addEventListener('click',VerificaNumero);
 // letra c
-// funçã para verificar se o veiculo esta acima da velocidade
+// função para verificar se o veiculo esta acima da velocidade
 function VerificaVelocidade(){
     const input = document.getElementById('velocidade');
 // casting input
@@ -74,3 +74,24 @@ function VerificaVelocidade(){
     }
 }
 verificar.addEventListener('click',VerificaVelocidade);
+// letra d
+// função para calcular o salário
+function CalculaSalario(){
+    const input = document.getElementById('salario');
+    let aumento, novoSalario;
+    // casting
+    const salario = parseFloat(input.value);
+    if (isNaN(salario) || salario < 0){
+        resultado.textContent = "Informe um valor válido."
+    }
+    else if (salario < 1000){
+        aumento = 0.10;
+    }else if(salario > 1500){
+        aumento = 0.05;
+    }else{
+        aumento = 0;
+    }
+    novoSalario = (salario * aumento) + salario;
+    resultado.textContent = `O valor do novo salário é R$${novoSalario} reais`;
+}
+verificar.addEventListener('click', CalculaSalario);
