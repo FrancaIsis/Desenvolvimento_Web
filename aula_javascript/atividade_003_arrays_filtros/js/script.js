@@ -5,11 +5,36 @@ const produtos = [
     {nome: 'Mel Puro', valor: 22, categoria:'alimentos'},
 
 ];
-const categoriaEscolhida = document.getElementById('categoria').value;
+const resultado = document.getElementById('resultado-filtrar');
+const categoriaEscolhida = document.getElementById('categoria');
+const totalEscolhido = document.getElementById('total');
  
-categoriaEscolhida.addEventListener('change', function(){
+function mostrarProdutos(lista) {
+    resultado.innerHTML = "";
+    let valorTotal = 0;
 
+    lista.forEach(produto => {
+        const div = document.createElement("div");
+        div.innerHTML = `<strong>${produto.nome}</strong><br>R$ ${produto.valor.toFixed(2)}`;
+        resultado.appendChild(div);
+        valorTotal += produto.valor;
+    });
+
+    totalEscolhido.textContent = `Total: R$ ${valorTotal.toFixed(2)}`;
+}
+
+categoriaEscolhida.addEventListener("change", () => {
+    const filtro = categoriaEscolhida.value;
+    if (filtro === "todos") {
+        mostrarProdutos(produtos);
+    } else {
+        const filtrados = produtos.filter(p => p.categoria === filtro);
+        mostrarProdutos(filtrados);
+    }
 });
+
+// inicial
+mostrarProdutos(produtos);
 
 
 // mostrar o resultado dos filtros
