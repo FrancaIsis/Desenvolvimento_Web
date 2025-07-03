@@ -1,7 +1,6 @@
 // verificar e resultado globais
-const verificar = document.getElementById("btnVerificar");
-const resultado = document.getElementById("resultado");
-const voltar = document.getElementById("voltar");
+let verificar = document.getElementById("btnVerificar");
+let resultado = document.getElementById("resultado");
 
 // letra a
 // função para verificar se é par ou ímpar
@@ -13,8 +12,7 @@ function VerificaPar() {
 
   if (numero % 2 == 0) {
     resultado.textContent = "Numero par.";
-  }
-  if (numero % 2 !=0){
+  } else {
     resultado.textContent = "Número ímpar.";
   }
 }
