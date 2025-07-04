@@ -18,15 +18,48 @@ function criarFormulario(botao){
     const formulario = document.getElementById("formulario");
     const resultado = document.getElementById("resultado");
 
-    const form = document.createElement("form");
-    form.innerHTML=`
-        <label for="numero">Digite o número: </label>
-        <input type="number" id="numero" placeholder="Digite um número" required>
-        <button type="button">Enviar</button>
-    `
+    formulario.innerHTML = `
+        <form>
+            <label for="numero">Digite o número: </label>
+            <input type="number" id="numero" placeholder="Digite um número" required>
+            <button type="button" id="btnVerificar" class="botao">Enviar</button>
+            <button type="button" id="btnVoltar" class="botao">Voltar</button>
+        </form>
+    `;
+    resultado.textContent = "";
+
+    // pegando os dados do formulario e o botpo verificar
+    const numero = document.getElementById("numero");
+    const btnVerificar = document.getElementById("btnVerificar");
+    //add evento ao botao para validar a entrada
+    btnVerificar.addEventListener("click", () =>{ // função anonima
+      const entrada = document.getElementById("numero").value;
+      const numero = validarEntrada(entrada);
+      
+      if (botaoId === "btnLetraA"){
+        
+      }
+    });
+
 }
 
 // FUNÇÕES
+
+// validar entrada
+function validarEntrada(entrada) {
+    const resultado = document.getElementById("resultado");
+
+    if (entrada === null || entrada.trim() === '') {
+        resultado.textContent = 'Campo não pode ser vazio!';
+        return null;
+    }
+    const num = Number(entrada);
+    if (isNaN(num)) {
+        resultado.textContent = 'Favor digitar um número!';
+        return null;
+    }
+    return num;
+}
 // letra a
 // função para verificar se é par ou ímpar
 function VerificaPar() {
