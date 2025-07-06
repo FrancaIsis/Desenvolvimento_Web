@@ -61,7 +61,7 @@ input[type="number"]:focus {
 }
 
 /* Botão */
-button {
+.botao, .btnLetra {
     background-color: #54585c;
     color: white;
     padding: 8px 20px;
@@ -74,12 +74,12 @@ button {
     display: block;
 }
 
-button:hover {
+.botao:hover, .btnLetra:hover {
     background-color: #70e24a;
     transform: translateY(-1px);
 }
 
-button:active {
+.botao:active, .btnLetra:active {
     transform: translateY(0);
 }
 .espaco{
