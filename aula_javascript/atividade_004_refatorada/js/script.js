@@ -2,71 +2,69 @@ const resultado = document.getElementById("resultado");
 
 //capturando os botoes
 
-const botoes = document.querySelectorAll(".btnLetra");
+const letras = document.querySelectorAll(".letra");
 
 //escutando os eventos
 
-botoes.forEach((botao) => {
+letras.forEach((letra) => {
   // percorre cada botao dentro da lista
-  botao.addEventListener("click", () => {
+  letra.addEventListener("click", () => {
     //cada botao na lista de botoes tera um evento escutador
     //ao click vai executar a função anonima que chama a função criarFormulario()
-    escolherOpcao(botao.id); // id do botao que esta no html
+    escolherOpcao(letra.id); // id do botao que esta no html
   });
 });
 
 //menu
-function escolherOpcao(botaoId) {
-  switch (botaoId) {
-    case "btnLetraA":
+function escolherOpcao(letraId) {
+  switch (letraId) {
+    case "letraA":
       criarFormulario(1, function(lista){
         const number = lista[0];
         VerificaPar(number);
-      });
-      
+      });      
       break;
-    case "btnLetraB": //3
+    case "letraB": //3
       criarFormulario(3, function(lista){
         VerificaNumero(lista);//pega todo mundo da lista
       });
       break;
-    case "btnLetraC":
+    case "letraC":
       criarFormulario(1, function(lista){
         const number = lista[0];
         VerificaVelocidade(number);
       });
       break;
-    case "btnLetraD":
+    case "letraD":
       criarFormulario(1, function(lista){
         const number = lista[0];
         CalculaSalario(number);
       });
       break;
-    case "btnLetraE":
+    case "letraE":
       criarFormulario(1, function(lista){
         const number = lista[0];
         CalculaPassagem(number);
       });
       break;
-    case "btnLetraF":
+    case "letraF":
       criarFormulario(1, function(lista){
         const number = lista[0];
-        CalculaBissexto(lista);
+        CalculaBissexto(number);
       });
       break;
-    case "btnLetraG":
+    case "letraG":
       criarFormulario(3, function(lista){
         VerificaTriangulo(lista); //3
       });
       break;
-    case "btnLetraH":
+    case "letraH":
       criarFormulario(3, function(lista){
         CalculaRaizes(lista); //3
       });
       break;
   }
 }
-
 
 // criando o formulario
 function criarFormulario(quantidade, retorno) {
@@ -99,8 +97,6 @@ function criarFormulario(quantidade, retorno) {
   });
 }
 
-
-
 // FUNÇÕES
 
 // validar entrada
@@ -111,7 +107,7 @@ function validarEntrada(entrada) {
     resultado.textContent = "Campo não pode ser vazio!";
     return null;
   }
-  const num = Number(entrada);
+  const num = Number(entrada);// já transforma em numero
   if (isNaN(num)) {
     resultado.textContent = "Favor digitar um número!";
     return null;
@@ -121,10 +117,7 @@ function validarEntrada(entrada) {
 // letra a
 // função para verificar se é par ou ímpar
 function VerificaPar(numero) {
-  
 
-  // casting do input
-  const numero = parseInt(input);
 
   if (numero % 2 == 0) {
     resultado.textContent = "Numero par.";
@@ -139,8 +132,7 @@ function VerificaPar(numero) {
 function VerificaNumero(lista) {
   const [primeiro, segundo, terceiro] = lista;
   
-  // casting input
-
+ 
   let maior = primeiro;
   let menor = segundo;
 
@@ -166,11 +158,8 @@ function VerificaNumero(lista) {
 }
 // letra c
 // função para verificar se o veiculo esta acima da velocidade
-function VerificaVelocidade() {
-  const input = document.getElementById("numero").value;
-  validarEntrada(input);
-  // casting input
-  const velocidade = parseInt(input);
+function VerificaVelocidade(velocidade) {  
+ 
   if (velocidade < 60) {
     resultado.textContent = `Sua velocidade atual é: ${velocidade}km/h. Continue dentro do limite de 60 km/h estabelecido.`;
   } else if (velocidade == 60) {
@@ -181,12 +170,10 @@ function VerificaVelocidade() {
 }
 // letra d
 // função para calcular o salário
-function CalculaSalario() {
-  const input = document.getElementById("numero").value;
-  validarEntrada(input);
+function CalculaSalario(salario) {
+  
   let aumento, novoSalario;
-  // casting
-  const salario = parseFloat(input.value);
+
   if (isNaN(salario) || salario < 0) {
     resultado.textContent = "Informe um valor válido.";
   } else if (salario < 1000) {
@@ -202,12 +189,10 @@ function CalculaSalario() {
 
 // letra e
 // função para calcular o valor da passagem
-function CalculaPassagem() {
-  const input = document.getElementById("numero").value;
-  validarEntrada(input);
+function CalculaPassagem(distancia) {
+  
   let valorFinal, valorUnitario;
-  //casting
-  const distancia = parseInt(input.value);
+  
   if (isNaN(distancia) || distancia < 0) {
     resultado.textContent = "Informe um valor válido.";
   } else if (distancia < 200) {
@@ -221,11 +206,8 @@ function CalculaPassagem() {
 
 // letra f
 // função para calcular se o ano é bissexto
-function CalculaBissexto() {
-  const input = document.getElementById("numero").value;
-  validarEntrada(input);
-  //casting
-  const ano = parseInt(input.value);
+function CalculaBissexto(ano) {
+  
   if (isNaN(ano) || ano < 0) {
     resultado.textContent = "Informe um valor válido.";
   } else if ((ano % 4 == 0 && ano % 100 != 0) || ano % 400 == 0) {
@@ -237,48 +219,26 @@ function CalculaBissexto() {
 
 // letra g
 // função para verificar se 3 segmentos de reta formam um triângulo
-function VerificaTriangulo() {
-  const input1 = document.getElementById("segmento1");
-  const input2 = document.getElementById("segmento2");
-  const input3 = document.getElementById("segmento3");
-  // casting
-  const segmento1 = parseFloat(input1.value);
-  const segmento2 = parseFloat(input2.value);
-  const segmento3 = parseFloat(input3.value);
+function VerificaTriangulo(lista) {
+    //verificando valores invalidos
+  const [a, b, c] = lista;
 
-  //verificando valores invalidos
-  if (segmento1 <= 0) {
+  if(a <= 0 || b <= 0 || c <= 0){
     resultado.textContent =
-      "O valor informado para o primeiro segmento é inválido. Informe um valor maior que zero.";
-  } else if (segmento2 <= 0) {
-    resultado.textContent =
-      "O valor informado para o segundo segmento é inválido. Informe um valor maior que zero.";
-  } else if (segmento3 <= 0) {
-    resultado.textContent =
-      "O valor informado para o terceiro segmento é inválido. Informe um valor maior que zero.";
-  } else if (
-    segmento1 < segmento2 + segmento3 &&
-    segmento2 < segmento1 + segmento3 &&
-    segmento3 < segmento2 + segmento1
-  ) {
+      "O valor informado é inválido. Informe um valor maior que zero.";
+      return;
+  }
+  if (a < b + c && b < a + c && c < b + a){
     resultado.textContent = "É um triângulo";
-  } else {
+  }else {
     resultado.textContent = "Não é um triângulo";
   }
 }
 
 // letra h
 // função para calcular raízes de equação quadrática
-function CalculaRaizes() {
-  const inputa = document.getElementById("a");
-  const inputb = document.getElementById("b");
-  const inputc = document.getElementById("c");
-  let delta, x1, x2;
-
-  // casting
-  const a = parseInt(inputa.value);
-  const b = parseInt(inputb.value);
-  const c = parseInt(inputc.value);
+function CalculaRaizes(lista) {  
+  const [a, b, c] = lista;
 
   if (a != 0) {
     delta = b ** 2 - 4 * a * c;
