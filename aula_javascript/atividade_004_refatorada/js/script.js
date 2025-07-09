@@ -72,8 +72,8 @@ function criarFormulario(quantidade, retorno) {
   let entradasHTML = "";
   //estrutura de controle pra pegar os valores digitados
   for (let i = 1; i <= quantidade; i++) {
-    entradasHTML+= `<label>Valor ${i}:</label>
-      <input type="number" id="numero${i}" placeholder="Digite o número ${i}" required><br>`;
+    entradasHTML+= `<label>Digite o valor:</label>
+      <input type="number" id="numero${i}" placeholder="Digite o número" required><br>`;
   }
 
   formulario.innerHTML = `

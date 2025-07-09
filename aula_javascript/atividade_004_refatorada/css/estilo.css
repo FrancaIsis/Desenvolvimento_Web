@@ -28,6 +28,7 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;/*fixou o rodapé*/
     justify-content: center;
     gap: 10px; /*espaçamento entre as caixinhas */
  
@@ -46,7 +47,7 @@ label {
   color: #444;
 }
 input[type="number"] {
-    width: 90px; 
+    width: 200px; 
     padding: 8px 10px;
     margin-right: 8px;
     border: 1px solid #ccc;
@@ -162,6 +163,7 @@ a:hover {
     margin-left: 20%;
     margin-right: 20%;
     justify-content: center;
+    font-weight: bold;
     }
 footer {
    
