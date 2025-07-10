@@ -27,13 +27,19 @@ input{
   background-color: #ffffff;
   font-size: 18px;
 }
+section{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
 .espaco{
   background-color: #ffffff3d;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   padding: 24px;
   width: 520px;
-  height: 400px;  
+  height: 200px;  
   text-align: center;
 }
 label, p{
