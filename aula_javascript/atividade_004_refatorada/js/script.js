@@ -114,6 +114,13 @@ function validarEntrada(entrada) {
   }
   return num;
 }
+
+//ancora
+function voltar(){
+  const voltar = document.getElementById("voltar");
+  voltar.innerHTML = `<a href = "#topo" class = "botao-voltar">Voltar</a>
+  `;
+}
 // letra a
 // função para verificar se é par ou ímpar
 function VerificaPar(numero) {
@@ -121,9 +128,12 @@ function VerificaPar(numero) {
 
   if (numero % 2 == 0) {
     resultado.textContent = "Numero par.";
+    voltar();
+
   }
   if (numero % 2 != 0) {
     resultado.textContent = "Número ímpar.";
+    voltar();
   }
 }
 
@@ -151,9 +161,11 @@ function VerificaNumero(lista) {
 
   if (primeiro == segundo && segundo == terceiro) {
     resultado.textContent = "Os números informados são iguais";
+    voltar();
   } else {
     resultado.innerHTML = `Maior número: ${maior}<br>
     Menor número: ${menor}`;
+    voltar();
   }
 }
 // letra c
@@ -162,10 +174,13 @@ function VerificaVelocidade(velocidade) {
  
   if (velocidade < 60) {
     resultado.textContent = `Sua velocidade atual é: ${velocidade}km/h. Continue dentro do limite de 60 km/h estabelecido.`;
+    voltar();
   } else if (velocidade == 60) {
     resultado.textContent = `Sua velocidade atual é: ${velocidade}km/h. Este é o limite máximo estabelecido. Cuidado!!`;
+    voltar();
   } else {
     resultado.textContent = `Sua velocidade atual é: ${velocidade}km/h. Você ultrapassou o limite máximo de 60 km/h. Reduza a velocidade!!`;
+    voltar();
   }
 }
 // letra d
@@ -184,7 +199,8 @@ function CalculaSalario(salario) {
     aumento = 0;
   }
   novoSalario = salario * aumento + salario;
-  resultado.textContent = `O valor do novo salário é R$${novoSalario} reais`;
+  resultado.textContent = `O valor do novo salário é R$ ${novoSalario.toFixed(2)} reais`;
+  voltar();
 }
 
 // letra e
@@ -202,6 +218,7 @@ function CalculaPassagem(distancia) {
   }
   valorFinal = distancia * valorUnitario;
   resultado.textContent = `Prezado cliente, o valor da sua passagem para ${distancia} km a serem percorridos é de R$${valorFinal} reais.`;
+  voltar();
 }
 
 // letra f
@@ -212,8 +229,10 @@ function CalculaBissexto(ano) {
     resultado.textContent = "Informe um valor válido.";
   } else if ((ano % 4 == 0 && ano % 100 != 0) || ano % 400 == 0) {
     resultado.textContent = `O ano ${ano} é bissexto!`;
+    voltar();
   } else {
     resultado.textContent = `O ano ${ano} não é bissexto!`;
+    voltar();
   }
 }
 
@@ -230,8 +249,10 @@ function VerificaTriangulo(lista) {
   }
   if (a < b + c && b < a + c && c < b + a){
     resultado.textContent = "É um triângulo";
+    voltar();
   }else {
     resultado.textContent = "Não é um triângulo";
+    voltar();
   }
 }
 
@@ -247,10 +268,13 @@ function CalculaRaizes(lista) {
       x2 = (-b - delta ** 0.5) / (2 * a);
       resultado.textContent = `
             A raízes da expressão ${a}𝑥²${b}𝑥+${c} são: ${x1} e ${x2}.`;
+            voltar();
     } else {
       resultado.textContent = "A equação não possui raízes reais.";
+      voltar();
     }
   } else {
     resultado.textContent = "O valor de a não pode ser zero.";
+    voltar();
   }
 }

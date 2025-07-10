@@ -76,7 +76,11 @@ input[type="number"]:focus {
 }
 
 .letra {
+    display: flex;
+    flex-direction: column;
     background-color: #54585c;
+    justify-content: space-between;
+    height: auto;
     color: white;
     padding: 8px 20px;
     border: none;
@@ -85,7 +89,7 @@ input[type="number"]:focus {
     font-size: 0.95rem;
     transition: background-color 0.3s, transform 0.2s;
     margin: 20px auto 0;
-    display: block;
+    display: flex;
     text-align: left;
 }
 
@@ -165,6 +169,38 @@ a:hover {
     justify-content: center;
     font-weight: bold;
     }
+    
+.botao-voltar {
+    padding: 10px 30px;
+    width: 200px;
+    background:  #54585b;
+    color: rgb(214, 210, 210);
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    float: right;/*coloca o botao a direita */
+}
+.botao-voltar:hover {
+    background: #659d3544;
+    color: #444;
+}
+
+.calcular {
+    align-self: flex-end;/*manda o botao pro final*/
+    width: 100px;   
+    padding: 10px 15px;
+    background: #55555544;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;  
+}
+
+.calcular:hover {
+    background: #70e24a;   
+  
+}
 footer {
    
     text-align: center;
